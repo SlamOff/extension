@@ -1,0 +1,12 @@
+.buttonAccordionContent {
+  padding: 10px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.accordionContainer {
+  opacity: 1;
+}
+.accordionContainerHidden {
+  display: none;
+}

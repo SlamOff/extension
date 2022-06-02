@@ -1,0 +1,30 @@
+.TooltipContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid red;
+}
+.Tooltip {
+  position: absolute;
+  top: 100%;
+  background-color: red; 
+  font-size: 18px; 
+  color: #fff; 
+  text-align: center; 
+  top: 100%; 
+  right: 15px; 
+  display: inline-block; 
+  padding: 10px 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.Tooltip img {
+  max-height: 25px;
+  margin-left: 5px;
+}
+.TooltipHidden {
+  display: none;
+}

@@ -1,0 +1,39 @@
+.tabs {
+  padding: 0;
+  margin: 0 0 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabsItem {
+  border: 1px solid #000;
+  background-color: #fff;
+  flex: 0 0 25%;
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  outline: 0;
+}
+.tabsItem:hover,
+.tabsItem:focus,
+.tabsItem:active,
+.tabsItem:visited {
+  background-color: #fff;
+  color: #000;
+  outline: 0;
+}
+.active {
+  background-color: #0052cc;
+  color: #fff;
+  outline: 0;
+}
+.tabsItem.active:hover,
+.tabsItem.active:visited,
+.tabsItem.active:focus {
+  background-color: #0052cc;
+  color: #fff;
+  outline: 0;
+}

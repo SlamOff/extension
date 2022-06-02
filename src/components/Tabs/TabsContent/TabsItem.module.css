@@ -1,0 +1,31 @@
+.tabsItem {
+  opacity: 1;
+}
+.tabsEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabsItem.active {
+  display: block;
+}
+.tabsItemList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tabsItemList li {
+  font-size: 18px;
+  padding: 5px 0;
+}
+.tabsItemTitle {
+  font-size: 22px;
+}
+.componentsList {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  height: 350px;
+  overflow-y: auto;
+}

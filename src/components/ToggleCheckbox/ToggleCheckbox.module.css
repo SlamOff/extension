@@ -1,0 +1,62 @@
+.CheckboxItem {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.CheckboxItemContainer {
+    display: flex;
+}
+.CheckboxItemContainer:first-of-type {
+    margin-right: 10px;
+}
+
+.CheckboxItem input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.CheckboxItemToggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.CheckboxItemToggle::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .CheckboxItemToggle {
+    background-color: #0052cc;
+  }
+  
+  input:focus + .CheckboxItemToggle {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .CheckboxItemToggle:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+

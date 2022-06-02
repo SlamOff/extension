@@ -1,0 +1,50 @@
+.filter {
+  display: flex;
+  align-items: center;
+}
+.filterTitle {
+  margin-right: 10px;
+  margin-left: auto;
+}
+.filteRadio {
+  display: flex;
+  align-items: center;
+}
+.filterItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 5px 0;
+}
+.filterInput {
+  cursor: pointer;
+  margin: 0 0 0 5px;
+}
+.filterItem img {
+  max-height: 20px;
+}
+.filterSearchInput {
+  outline: 0;
+  border-radius: 5px!important;
+  height: 30px;
+  min-height: auto!important;
+  width: 100%!important;
+}
+.filterSearch {
+  position: relative;
+  flex-grow: 1;
+  margin-right: 10px;
+  display: flex;
+}
+.filterSearchRefresh {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Atlassian",
+  "description": "Atlassian Components tool",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://community.atlassian.com/*", "http://localhost:3000/"],
+      "run_at": "document_end",
+      "js": [],
+      "css": [],
+      "media": []
+    }
+  ],
+  "action": {
+    "default_title": "Atlassian",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["../src/inject.js", "https://w1.pngwing.com/pngs/232/771/png-transparent-reset-icon-reset-button-icon-design-menu-bar-hamburger-button-computer-black-and-white-text.png", "https://img.icons8.com/external-flatart-icons-outline-flatarticons/452/external-down-arrow-flatart-icons-outline-flatarticons-1.png", "static/media/*"],
+      "matches": ["https://community.atlassian.com/*"]
+    }
+  ]
+}
